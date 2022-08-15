@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".ui.home.HomeFragment">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="20sp"
+      android:background="@color/white"
+      android:orientation="horizontal">
+
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:padding="10sp"
+          android:src="@drawable/location" />
+      <androidx.appcompat.widget.AppCompatTextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+         android:text="India"
+         android:textSize="20sp"
+          android:padding="10sp"
+          android:id="@+id/text5"
+          android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+          android:textColor="@color/purple_500"
+         android:textStyle="bold|italic"/>
+
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_marginLeft="160dp"
+
+
+          android:src="@drawable/notification" />
+   </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="340dp"
+       android:layout_height="49dp"
+       android:layout_gravity="center"
+       android:layout_marginTop="30sp"
+       android:background="@drawable/img_4">
+
+      <ImageView
+          android:layout_width="34dp"
+          android:layout_height="match_parent"
+          android:src="@drawable/search" />
+
+      <EditText
+          android:layout_width="280dp"
+          android:layout_height="match_parent"
+          android:hint="Search Car,Mobile and Bikes and more"
+          android:textColor="@color/black"
+          android:id="@+id/searcheditText"
+
+
+          android:textStyle="bold|italic" />
+   </LinearLayout>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_marginTop="30sp"
+        android:layout_height="wrap_content"
+       android:orientation="vertical"
+      >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+         android:text="Browse Categories"
+         android:textStyle="bold"
+          android:padding="10sp"
+         android:textSize="20sp"
+         android:textColor="@color/black"/>
+      <androidx.recyclerview.widget.RecyclerView
+          android:layout_width="match_parent"
+         android:layout_marginTop="20sp"
+         android:layout_gravity="center"
+         android:id="@+id/recycleview"
+
+          android:layout_height="wrap_content"/>
+
+   </LinearLayout>
+</LinearLayout>

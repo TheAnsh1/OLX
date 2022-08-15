@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">OLX APP</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="facebook_app_id">470846991122828</string>
+    <string name="fb_login_protocol_scheme">fb470846991122828</string>
+    <string name="facebook_client_token">6536b57d66a057b9715080874401dfd7</string>
+    <string name="title_sell">Sell</string>
+    <string name="title_Sell">Sell</string>
+
+</resources>
