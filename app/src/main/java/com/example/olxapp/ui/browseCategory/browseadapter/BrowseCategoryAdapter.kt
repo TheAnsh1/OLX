@@ -1,4 +1,4 @@
-package com.example.olxapp.ui.myAds.adapter
+package com.example.olxapp.ui.browseCategory.browseadapter
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -12,7 +12,7 @@ import com.example.olxapp.R
 import com.example.olxapp.model.DataItemModel
 import java.text.SimpleDateFormat
 
-class MyAdsAdapter(var dataItemModel: MutableList<DataItemModel>,var mClickListener:ItemClickListener) : RecyclerView.Adapter<MyAdsAdapter.ViewHolder>() {
+class BrowseCategoryAdapter(var dataItemModel: MutableList<DataItemModel>, var mClickListener:ItemClickListener) : RecyclerView.Adapter<BrowseCategoryAdapter.ViewHolder>() {
 
 
 
@@ -33,10 +33,14 @@ class MyAdsAdapter(var dataItemModel: MutableList<DataItemModel>,var mClickListe
             .load(dataItemModel.get(position).images.get(0))
             .placeholder(R.drawable.ic_placeholder)
             .into(holder.imageView)
+try {
+    val adf = SimpleDateFormat("dd/MM/yyyy")
+    val formattedDate = adf.format(dataItemModel.get(position).createdDate?.time!!)
+    holder.textViewDate.setText(formattedDate)
+}catch (e:Exception){
+    println(e)
+}
 
-     val sdf = SimpleDateFormat("dd/MM/yyyy")
-       val formattedDate =sdf.format(dataItemModel.get(position).createdDate?.time!!)
-        holder.textViewDate.setText(formattedDate)
         holder.imageView.setOnClickListener(View.OnClickListener {
             mClickListener.onItemClick(position)
         })
@@ -52,6 +56,7 @@ class MyAdsAdapter(var dataItemModel: MutableList<DataItemModel>,var mClickListe
     }
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+
         val textViewPrice=itemView.findViewById<TextView>(R.id.tvprice)
         val imageView=itemView.findViewById<ImageView>(R.id.imageView)
         val textViewBrand=itemView.findViewById<TextView>(R.id.tvBrand)

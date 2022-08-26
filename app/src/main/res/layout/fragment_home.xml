@@ -56,7 +56,7 @@
           android:layout_height="match_parent"
           android:hint="Search Car,Mobile and Bikes and more"
           android:textColor="@color/black"
-          android:id="@+id/searcheditText"
+          android:id="@+id/searchText"
 
 
           android:textStyle="bold|italic" />
@@ -79,7 +79,7 @@
           android:layout_width="match_parent"
          android:layout_marginTop="20sp"
          android:layout_gravity="center"
-         android:id="@+id/recycleview"
+         android:id="@+id/recycleviewHome"
 
           android:layout_height="wrap_content"/>
 

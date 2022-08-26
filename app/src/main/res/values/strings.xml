@@ -8,5 +8,28 @@
     <string name="facebook_client_token">6536b57d66a057b9715080874401dfd7</string>
     <string name="title_sell">Sell</string>
     <string name="title_Sell">Sell</string>
+    <string name="mention">Mention the key features of your item(e.g brand, model,age,type)</string>
+    <string name="describe">Describe what are You Selling</string>
+    <string name="features">Include features, Conditions and reason for selling</string>
+    <string name="title_include_details">includefragment</string>
+    <string name="brand">Enter Brand Name</string>
+    <string name="Phone">Enter Phone Number</string>
+    <string name="choose_photo">Choose Picture</string>
+    <string name="upload">Upload up to 5 Pictures</string>
+    <string name="preview">Preview</string>
+    <string name="upload_photo">Upload_photo</string>
+    <string name="ansh">$100.00</string>
+    <string name="title_My_ads">MyAds</string>
+    <string name="title_details">details</string>
+    <string name="title_browse">Browse</string>
+    <string name="logout">Logout</string>
+    <string name="Logout">Are you sure,You want to Logout?</string>
+    <string name="yes">Yes</string>
+    <string name="ni">No</string>
+    <string name="title_Profile">Profile</string>
+    <string name="title_profile">Profile</string>
+    <string name="enter_name">Enter Your Name</string>
+    <string name="enter_email">Enter Email Address</string>
+    <string name="title_settings">Setttings</string>
 
 </resources>

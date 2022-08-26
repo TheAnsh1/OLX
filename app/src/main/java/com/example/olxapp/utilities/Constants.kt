@@ -1,10 +1,30 @@
 package com.example.olxapp.utilities
 
 object Constants {
+    val CREATED_DATE= "createdDate"
     val USER_EMAIL="user_email"
     val SharedPrefName="OLX"
     val USER_NAME="user_name"
     val USER_ID="user_id"
     val USER_PHOTO="user_photo"
     val CITY_NAME="city_name"
+    val KEY="key"
+    val USER_ADDRESS="user_address"
+    val USER_PHONE="user_phone"
+    val BRAND ="brand"
+    val YEAR="year"
+    val AD_TITLE="AdTitle"
+    val ID="id"
+    val CAR="Car"
+    val AD_DESCRIPTION="edDescribe2"
+    val KM_DRIVER="kmdrive"
+    val TYPE="type"
+    val PRICE="price"
+    val PHONE="phone"
+    val ADDRESS="address"
+    val CURRENCY_SYMBOL="₹"
+    val IMAGE_PATH="image_paths"
+    val DOCUMENT_ID="doc_id"
+    val CATEGORIES="Categories"
+
 }
